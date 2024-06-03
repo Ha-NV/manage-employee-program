@@ -1,6 +1,6 @@
 # manage-employee-program
 
-Chương trình quản lý nhân viên gồm các yêu cầu sau:
+## Chương trình quản lý nhân viên gồm các yêu cầu sau:
     + Thông tin nhân viên:
         - id: Mã số nhân viên
         - name: Họ và tên nhân viên
@@ -10,13 +10,16 @@ Chương trình quản lý nhân viên gồm các yêu cầu sau:
         - working_performance: Hệ số hiệu quả
         - bonus: Thưởng
         - late_comming_days: Số ngày đi muộn
+    
     + Thông tin bộ phận:
         - id: Mã bộ phận
         - bonus_salary: Thưởng bộ phận
+        
     + Trừ đi muộn:
         - Đi trễ <= 3 ngày/tháng: 10000 VNĐ
         - Đi trễ  > 3 ngày/tháng: 20000 VNĐ
         - phạt đi muộn = late_comming_days * tiền phạt đi trễ
+        
     + Tính lương cho nhân viên:
         - tổng thu nhập chưa thưởng = (salary_base * working_days) * working_performance
         - tổng thu nhập  = tổng thu nhập chưa thưởng + bonus + thưởng bộ phận - phạt đi muộn
@@ -27,6 +30,7 @@ Chương trình quản lý nhân viên gồm các yêu cầu sau:
             > Nếu lương của nhân viên nằm trong nửa khoảng 11,000,00 VNĐ đến 16,000,00 VNĐ thì sẽ cần đóng thuế = 5% lương.
             > Nếu lương của nhân viên trên 16,000,00 VNĐ thì sẽ cần đóng thuế = 10% lương.
         - lương thực nhận = tổng thu nhập chưa thuế - khoản thuế cần nộp
+        
     + Tạo menu khi khởi động chương trình:
         1. Hiển thị danh sách nhân viên.
         2. Hiển thị danh sách bộ phận.
